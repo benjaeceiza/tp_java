@@ -57,13 +57,13 @@ public class Estudiante {
     public void setPromedio(double promedio) {
         this.promedio = promedio;
     }
- 
-    
-    //Imprime el nombre y el promedio de cada estudiante del arreglo
-    public void imprimirEstudiante (Estudiante [] arrayEstudiantes) {
 
+    // Imprime el nombre y el promedio de cada estudiante del arreglo
+    public void imprimirEstudiante(Estudiante[] arrayEstudiantes) {
         for (int i = 0; i < arrayEstudiantes.length; i++) {
-            System.out.println("Nombre: " + nombre + " " + "Promedio: " + promedio);
+       
+            System.out.println("Nombre: " + arrayEstudiantes[i].getNombre() +
+                    " | Promedio: " + arrayEstudiantes[i].getPromedio());
         }
     }
 
